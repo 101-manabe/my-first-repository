@@ -1,0 +1,24 @@
+@import './bourbon/bourbon';
+
+// ネストのテスト
+div {
+    p {
+      font-weight: bold;
+      span{
+        text-align: left;
+      }
+    }
+  }
+   
+  // 変数のテスト
+  $fontColor: #525252;
+  $bgColor: #ff0000;
+   
+  h1 {
+    color: $fontColor;
+    background-color: $bgColor;
+  }
+  .hoge {
+    @include clearfix;
+   }
+  
