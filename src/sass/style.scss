@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import './bourbon/bourbon';
+@import './neat/neat';
 
 // ネストのテスト
 div {
@@ -9,16 +11,43 @@ div {
       }
     }
   }
-   
   // 変数のテスト
-  $fontColor: #525252;
-  $bgColor: #ff0000;
-   
+  $bgColor: #050505;
+  $textColor:rgb(255, 0, 212);
+  body{
+    background-color: $bgColor;
+    color: $textColor;
+  }
   h1 {
-    color: $fontColor;
     background-color: $bgColor;
   }
   .hoge {
     @include clearfix;
-   }
+  }
+  .element01 {
+    @include border-color(#a60b55 #76cd9c null #e8ae1a);
+  }
+  .element02 {
+    @include border-top-radius(4px);
+  }
+  .element03 {
+    @include margin(10px 3em 20vh null);
+  }
+  .element04 {
+    @include padding(10px 15px);
+  }
+  .element05 {
+    @include margin(10px 3em 20vh null);
+  }
+  .element06 {
+    @include margin(10px 3em 20vh null);
+  }
+  .box {
+    @include margin(0 auto);
+    @include border-style(solid dashed dotted null); // TOP-RIGHT-BOTTOM-RIGHT
+    @include border-width(3px);
+  }
+  .element {
+    @include grid-column(3);
+  }
   

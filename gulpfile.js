@@ -13,9 +13,9 @@ gulp.task('default', function () {
     gulp.src('src/sass/style.scss')
         // Sassのコンパイルを実行
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'expanded'
         }))
         // cssフォルダー以下に保存
         .pipe(gulp.dest('assets/css'));
-    });
+    }); 
 });
