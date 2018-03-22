@@ -1,4 +1,15 @@
 @charset "UTF-8";
+// ネストのテスト
+div.header {
+  p {
+    font-weight: bold;
+    span{
+      @include clearfix;
+      text-align: left;
+    }
+  }
+}
 .header{
   @include clearfix;
+  @include border-top-radius(4px);
 }

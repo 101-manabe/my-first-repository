@@ -51,4 +51,7 @@ div {
   .element {
     @include grid-column(3);
   }
+  .footer__list{
+    @include margin(10px null);
+  }
   
