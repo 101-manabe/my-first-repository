@@ -10,6 +10,5 @@ div.header {
   }
 }
 .header{
-  @include clearfix;
   @include border-top-radius(4px);
 }

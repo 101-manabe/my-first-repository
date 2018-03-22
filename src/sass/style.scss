@@ -44,7 +44,6 @@ div {
     @include margin(10px 3em 20vh null);
   }
   .box {
-    @include margin(0 auto);
     @include border-style(solid dashed dotted null); // TOP-RIGHT-BOTTOM-RIGHT
     @include border-width(3px);
   }
