@@ -1,7 +1,20 @@
-.header::after {
+div.header p {
+  font-weight: bold;
+}
+
+div.header p span {
+  text-align: left;
+}
+
+div.header p span::after {
   clear: both;
   content: "";
   display: block;
+}
+
+.header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 div p {
@@ -19,6 +32,10 @@ body {
 
 h1 {
   background-color: #050505;
+}
+
+div {
+  background-color: #c8ff00;
 }
 
 .hoge::after {
@@ -61,7 +78,6 @@ h1 {
 }
 
 .box {
-  margin: 0 auto;
   border-top-style: solid;
   border-right-style: dashed;
   border-bottom-style: dotted;
@@ -72,4 +88,9 @@ h1 {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
+}
+
+.footer__list {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
